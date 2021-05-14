@@ -14,11 +14,15 @@ interface Area<out T: Area.AreaIdentifier> {
      * area identifier から生成したい。
      * 生成ロジックもここに書く
      */
-    val id: Long
+    val id: AreaIdentifier
     val areaIdentifier: T
-    val name: String
+    val name: AreaName
     fun areaURIGenerator(name: String):URL
-    interface AreaIdentifier{
-        val uri: String
-    }
+    @JvmInline
+    value class AreaIdentifier(val uri: String)
+
+    @JvmInline
+    value class AreaName(val id: String)
+
+
 }

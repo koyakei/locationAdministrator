@@ -1,5 +1,8 @@
 package kt.koyakei.locationadministrator.aggregate
 
+import kt.koyakei.core.domain.model.areas.Area
+import kt.koyakei.core.domain.model.areas.location.AdministrativeLocation
+import kt.koyakei.core.domain.model.areas.location.BusinessLocation
 import kt.koyakei.locationadministrator.event.LocationCreateCommand
 import kt.koyakei.locationadministrator.event.LocationCreateEvent
 import kt.koyakei.locationadministrator.event.LocationUpdateCommand
@@ -15,25 +18,30 @@ import org.axonframework.spring.stereotype.Aggregate
 
 @Aggregate
 @AllowReplay
-class LocationPrice(
-//    @AggregateIdentifier private val id : String,
-//                    private val price: Long
-                    ){
+class LocationPrice() {
 
     @AggregateIdentifier
     private lateinit var id: String
     private lateinit var price: Number
+    private lateinit var administrativeLocation: AdministrativeLocation
 
     override fun toString(): String {
-        return "id" + id + ":price" + price.toString()
+        return "id$id:price$price:AdministrativeLocation$administrativeLocation"
     }
 
     @CommandHandler
-    constructor(locationCreateCommand: LocationCreateCommand): this()  {
+    constructor(locationCreateCommand: LocationCreateCommand) : this() {
         AggregateLifecycle.apply(
             LocationCreateEvent(
                 locationCreateCommand.id,
-                locationCreateCommand.price
+                locationCreateCommand.price,
+                AdministrativeLocation(
+                    locationCreateCommand.areaId,
+                    locationCreateCommand.administrativeLocationName,
+                    locationCreateCommand.enterLocationCondition,
+                    locationCreateCommand.areaIdentifier,
+                    locationCreateCommand.addressValueObject
+                )
             )
         )
     }
@@ -42,7 +50,7 @@ class LocationPrice(
     fun on(evt: LocationCreateEvent) {
         id = evt.id
         price = evt.price
-//        AggregateLifecycle.apply(LocationPriceCreateSnapShotEvent(evt.id,this))
+        administrativeLocation = evt.administrativeLocation
     }
 
     @CommandHandler
@@ -50,7 +58,8 @@ class LocationPrice(
         AggregateLifecycle.apply(
             LocationUpdateEvent(
                 locationUpdateCommand.id,
-                locationUpdateCommand.price.toLong()
+                locationUpdateCommand.price.toLong(),
+                locationUpdateCommand.addressValueObjectCity
             )
         )
     }
@@ -58,6 +67,13 @@ class LocationPrice(
     @EventSourcingHandler
     fun on(evt: LocationUpdateEvent) {
         price = price.toLong().plus(evt.price)
-        AggregateLifecycle.apply(LocationPriceUpdateSnapShotEvent(evt.locationId,this))
+        administrativeLocation = administrativeLocation
+            .copy(
+                addressValueObject = administrativeLocation.addressValueObject
+                    .copy(city = evt.locationValueObjectCity)
+            )
+        AggregateLifecycle.apply(LocationPriceUpdateSnapShotEvent(evt.locationId, this))
     }
+
+
 }

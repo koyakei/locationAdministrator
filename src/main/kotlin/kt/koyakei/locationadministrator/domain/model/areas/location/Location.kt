@@ -2,10 +2,9 @@ package kt.koyakei.core.domain.model.areas.location
 
 import kt.koyakei.core.domain.model.areas.Area
 
-interface Location<out T :Location.LocationIdentifier> : Area<T> {
+interface Location {
 
     val enterLocationCondition: EnterLocationCondition
-    override val areaIdentifier: T
 
     /**
      * 内側のリストがAND 条件
@@ -14,5 +13,5 @@ interface Location<out T :Location.LocationIdentifier> : Area<T> {
     class EnterLocationCondition(
             val orIBeaconEntityList: List<List<Any>>
     )
-    interface LocationIdentifier : Area.AreaIdentifier
+
 }
