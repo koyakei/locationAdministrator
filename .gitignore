@@ -33,7 +33,7 @@ out/
 /nbdist/
 /.nb-gradle/
 
-/db/db/*
+db/db/*
 
 ### VS Code ###
 .vscode/
