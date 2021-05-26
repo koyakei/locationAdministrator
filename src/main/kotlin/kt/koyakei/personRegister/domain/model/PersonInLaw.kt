@@ -1,7 +1,9 @@
 package kt.koyakei.personRegister.domain.model
 
 interface PersonInLaw{
-    val personInLawIdentifier: PersonInLawIdentifier
+    val identifier: Identifier
+    @JvmInline
+    value class Identifier(val id : Long)
 }
 
-open class PersonInLawIdentifier(open val id : Long)
+

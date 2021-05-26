@@ -1,5 +1,6 @@
 package kt.koyakei.personRegister.domain.model
 
+import kt.koyakei.personRegister.domain.model.person.RightStatus
 import java.awt.Image
 
 /**
@@ -10,33 +11,39 @@ import java.awt.Image
  * 結婚は双方向の関係だけど、一方からじゃなくて相互に記録しておく
  * 相続から排除フラグが立ってるかどうかってどうするの？　どの親から
  * 養親の場合はそれぞれから相続廃除されるから親ごとに相続廃除のフラグを持てばいいか。
+ * ここの要素がめちゃくちゃ増えるのはやばい。　家族関係とか生活実態とかクラスで分けていくべき
+ * データが欠落しているときにも登録できるようにするが、 null を許容しない仕組みをどう作っていくか？
  */
 data class Person(
-    override val personInLawIdentifier: PersonIdentifier,
+    override val identifier: PersonInLaw.Identifier,
     val personName: PersonName,
     val familyIdentifier: FamilyIdentifier,
     val profilePhoto: ProfilePhoto,
     val marriagePartnerIdentifier: MarriagePartnerIdentifier,
     val parentsInLaw: ParentsInLaw,
-    val inheritanceProhibitedParents: InheritanceProhibitedRelatives
-) : PersonInLaw
+    val inheritanceProhibitedParents: InheritanceProhibitedRelatives,
+    val rightStatus: RightStatus
+) : PersonInLaw {
 
-class PersonIdentifier(override val id: Long) : PersonInLawIdentifier(id)
+    @JvmInline
+    value class PersonName(val name: String)
 
-@JvmInline
-value class PersonName(val name: String)
+    @JvmInline
+    value class ProfilePhoto(val photo: Image)
 
-@JvmInline
-value class ProfilePhoto(val photo: Image)
+    @JvmInline
+    value class MarriagePartnerIdentifier(val id: PersonInLaw.Identifier)
 
-@JvmInline
-value class MarriagePartnerIdentifier(val id: PersonIdentifier)
+    @JvmInline
+    value class ParentsInLaw(val identifierList: List<PersonInLaw.Identifier>)
 
-@JvmInline
-value class ParentsInLaw(val personIdentifierList: List<PersonIdentifier>)
+    /**
+     * 相続で自分を欠格排除した親族を登録
+     */
+    @JvmInline
+    value class InheritanceProhibitedRelatives(val identifierList: List<PersonInLaw.Identifier>)
 
-/**
- * 相続で自分を欠格排除した親族を登録
- */
-@JvmInline
-value class InheritanceProhibitedRelatives(val personIdentifierList: List<PersonIdentifier>)
+}
+
+
+

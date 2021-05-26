@@ -1,0 +1,15 @@
+package kt.koyakei.lawAndOrder.domain.model.codeOfLaw.constitution.principalRight.minimumSocialSecurity
+
+import kt.koyakei.lawAndOrder.domain.model.LawAndOrder
+import kt.koyakei.personRegister.domain.model.Person
+import kt.koyakei.personRegister.domain.model.person.RightStatus
+
+/**
+ * すべての人はインターネット接続をできる権利を有する。
+ * 接続速度を個別の法律で定めたら、それの変更がでんぱするように作る
+ */
+class 最低限の住居の保証条文(
+    private val person: Person
+) : LawAndOrder{
+    fun hasRight() = person.rightStatus.hasHouse == RightStatus.安全な住居がある(true)
+}
