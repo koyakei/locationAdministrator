@@ -1,8 +1,7 @@
 package kt.koyakei.administrativeLocationRegister.controller
 
-//import kt.koyakei.locationadministrator.event.LocationUpdateCommand
-import kt.koyakei.locationadministrator.event.LocationCreateCommand
-import kt.koyakei.locationadministrator.event.LocationUpdateCommand
+import kt.koyakei.administrativeLocationRegister.command.LocationCreateCommand
+import kt.koyakei.administrativeLocationRegister.command.LocationUpdateCommand
 import org.axonframework.commandhandling.CommandBus
 import org.axonframework.commandhandling.GenericCommandMessage
 import org.springframework.web.bind.annotation.*

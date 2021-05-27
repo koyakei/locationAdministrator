@@ -1,9 +1,11 @@
 package kt.koyakei.personRegister.domain.model
 
 data class Organization(
-    override val identifier: PersonInLawIdentifier,
+    override val identifier: PersonInLaw.Identifier,
     val organizationName: OrganizationName,
-) : PersonInLaw
+) : PersonInLaw{
+    @JvmInline
+    value class OrganizationName(val name: String)
+}
 
-@JvmInline
-value class OrganizationName(val name: String)
+

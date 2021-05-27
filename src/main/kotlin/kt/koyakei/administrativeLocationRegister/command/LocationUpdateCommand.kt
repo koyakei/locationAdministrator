@@ -1,4 +1,4 @@
-package kt.koyakei.administrativeLocationRegister.event
+package kt.koyakei.administrativeLocationRegister.command
 
 import org.axonframework.modelling.command.TargetAggregateIdentifier
 

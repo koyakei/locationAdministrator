@@ -13,11 +13,13 @@ import java.awt.Image
  * 養親の場合はそれぞれから相続廃除されるから親ごとに相続廃除のフラグを持てばいいか。
  * ここの要素がめちゃくちゃ増えるのはやばい。　家族関係とか生活実態とかクラスで分けていくべき
  * データが欠落しているときにも登録できるようにするが、 null を許容しない仕組みをどう作っていくか？
+ *
+ * 客観的なステータスのみを記載するようにしよう。
  */
 data class Person(
     override val identifier: PersonInLaw.Identifier,
     val personName: PersonName,
-    val familyIdentifier: FamilyIdentifier,
+    val familyIdentifier: Family.FamilyIdentifier,
     val profilePhoto: ProfilePhoto,
     val marriagePartnerIdentifier: MarriagePartnerIdentifier,
     val parentsInLaw: ParentsInLaw,

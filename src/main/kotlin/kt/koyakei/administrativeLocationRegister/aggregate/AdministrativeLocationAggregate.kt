@@ -1,8 +1,12 @@
 package kt.koyakei.administrativeLocationRegister.aggregate
 
-import kt.koyakei.locationadministrator.domain.model.areas.location.administrativeLocation.AdministrativeLocation
-import kt.koyakei.locationadministrator.event.*
-import kt.koyakei.locationadministrator.event.store.LocationPriceUpdateSnapShotEvent
+
+import kt.koyakei.administrativeLocationRegister.command.LocationCreateCommand
+import kt.koyakei.administrativeLocationRegister.command.LocationUpdateCommand
+import kt.koyakei.administrativeLocationRegister.domain.model.areas.location.administrativeLocation.AdministrativeLocation
+import kt.koyakei.administrativeLocationRegister.event.location.LocationCreateEvent
+import kt.koyakei.administrativeLocationRegister.event.location.LocationUpdateEvent
+import kt.koyakei.administrativeLocationRegister.event.store.LocationPriceUpdateSnapShotEvent
 import org.axonframework.commandhandling.CommandHandler
 import org.axonframework.eventhandling.AllowReplay
 import org.axonframework.eventsourcing.EventSourcingHandler

@@ -5,8 +5,10 @@ package kt.koyakei.personRegister.domain.model
  * 誰と結婚しているか、結婚していたか？など、必要な情報ですね。
  *
  */
-data class Family(val personIdentifierList: List<PersonIdentifier>,
-val familyIdentifier: FamilyIdentifier )
+data class Family(val personIdentifierList: List<PersonInLaw.Identifier>,
+val familyIdentifier: FamilyIdentifier ){
+    @JvmInline
+    value class FamilyIdentifier(val id : Long)
+}
 
-@JvmInline
-value class FamilyIdentifier(val id : Long)
+
