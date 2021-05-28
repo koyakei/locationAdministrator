@@ -7,10 +7,10 @@ import java.time.ZonedDateTime
 /**
  * マイクロサービスにする　person とは1:1関係にする。
  */
-data class 司法検察職員(
+data class Prosecutor(
     val identifier: Identifier,
     val personIdentifier: PersonInLaw.Identifier,
-    val getAuthorityAt: 司法検察職員.GetAuthorityAt,
+    val getAuthorityAt: Prosecutor.GetAuthorityAt,
     val expiredAuthorityAt: ExpiredAuthorityAt
 ) {
     @JvmInline

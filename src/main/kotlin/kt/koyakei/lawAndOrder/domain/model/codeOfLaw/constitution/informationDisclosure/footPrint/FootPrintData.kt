@@ -11,13 +11,14 @@ import java.time.ZonedDateTime
  **/
 data class FootPrintData(
     val identifier: Identifier,
-    val person: Person,
-    val targetInformation: Any,
-    val readAt: ReadAt,
-
+    val informationRequester: Person,
+    val readAt: RespondedAt,
+    val searchRequestedAt: SearchRequestedAt,
 ) {
     @JvmInline
     value class Identifier(val id : Long)
     @JvmInline
-    value class ReadAt(val zonedDateTime: ZonedDateTime)
+    value class RespondedAt(val zonedDateTime: ZonedDateTime)
+    @JvmInline
+    value class SearchRequestedAt(val zonedDateTime: ZonedDateTime)
 }
