@@ -1,5 +1,6 @@
 package kt.koyakei.driveingRecordingSystem.domain.aggregate
 
+import kt.koyakei.driveingRecordingSystem.domain.model.Car
 import kt.koyakei.lawAndOrder.domain.model.codeOfLaw.手続法.刑事訴訟法.Prosecutor
 
 /**
@@ -8,5 +9,5 @@ import kt.koyakei.lawAndOrder.domain.model.codeOfLaw.手続法.刑事訴訟法.P
  */
 interface DrivingRecordSearchConditionForProsecutor {
     val prosecutorIdentifier: Prosecutor.Identifier
-
+    val carIdentifier: Car.Identifier
 }
