@@ -1,7 +1,5 @@
 package kt.koyakei.lawAndOrder.domain.model.codeOfLaw.constitution.informationDisclosure.footPrint
 
-import kt.koyakei.personRegister.domain.model.PersonInLaw
-
 interface 情報閲覧アクション {
 
     // 情報識別子から

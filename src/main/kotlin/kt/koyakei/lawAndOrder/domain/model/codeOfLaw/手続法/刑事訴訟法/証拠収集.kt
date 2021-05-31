@@ -2,7 +2,7 @@ package kt.koyakei.lawAndOrder.domain.model.codeOfLaw.手続法.刑事訴訟法
 
 import kt.koyakei.lawAndOrder.domain.model.SearchEngine
 import kt.koyakei.lawAndOrder.domain.model.codeOfLaw.constitution.informationDisclosure.footPrint.情報閲覧アクション
-import kt.koyakei.personRegister.domain.model.PersonInLaw
+import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 /**
  * 司法検察職員は証拠収集のために検索した条件及び

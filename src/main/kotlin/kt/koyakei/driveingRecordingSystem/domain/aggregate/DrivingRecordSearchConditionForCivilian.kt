@@ -1,6 +1,6 @@
 package kt.koyakei.driveingRecordingSystem.domain.aggregate
 
-import kt.koyakei.personRegister.domain.model.PersonInLaw
+import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 /**
  * 全員が使える検索システム

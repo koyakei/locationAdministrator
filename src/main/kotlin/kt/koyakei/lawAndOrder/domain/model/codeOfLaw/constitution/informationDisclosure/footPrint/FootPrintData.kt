@@ -1,6 +1,6 @@
 package kt.koyakei.lawAndOrder.domain.model.codeOfLaw.constitution.informationDisclosure.footPrint
 
-import kt.koyakei.personRegister.domain.model.Person
+import kt.koyakei.personInLawRegister.domain.model.Person
 import java.time.ZonedDateTime
 
 /**

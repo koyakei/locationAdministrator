@@ -1,8 +1,8 @@
 package kt.koyakei.lawAndOrder.domain.model.codeOfLaw.constitution.principalRight.minimumSocialSecurity
 
 import kt.koyakei.lawAndOrder.domain.model.LawAndOrder
-import kt.koyakei.personRegister.domain.model.Person
-import kt.koyakei.personRegister.domain.model.person.RightStatus
+import kt.koyakei.personInLawRegister.domain.model.Person
+import kt.koyakei.戸籍Service.model.domain.person.RightStatus
 
 /**
  * すべての人はインターネット接続をできる権利を有する。

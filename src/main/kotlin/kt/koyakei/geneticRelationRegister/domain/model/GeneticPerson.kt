@@ -1,6 +1,6 @@
 package kt.koyakei.geneticRelationRegister.domain.model
 
-import kt.koyakei.personRegister.domain.model.PersonInLaw
+import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 /**
  * 遺伝子情報による血縁関係を取得

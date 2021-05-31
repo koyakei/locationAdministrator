@@ -3,7 +3,7 @@ package kt.koyakei.driveingRecordingSystem.domain.service
 import kt.koyakei.driveingRecordingSystem.domain.model.DrivingRecord検索条件
 import kt.koyakei.driveingRecordingSystem.domain.repository.DrivingDataRepository
 import kt.koyakei.lawAndOrder.domain.model.codeOfLaw.constitution.informationDisclosure.footPrint.情報閲覧アクション
-import kt.koyakei.personRegister.domain.model.PersonInLaw
+import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 class DrivingRecordSearchEngine(
     val drivingDataRepository: DrivingDataRepository

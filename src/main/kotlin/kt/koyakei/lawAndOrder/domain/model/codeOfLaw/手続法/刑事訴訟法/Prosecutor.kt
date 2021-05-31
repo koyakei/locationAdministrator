@@ -1,6 +1,6 @@
 package kt.koyakei.lawAndOrder.domain.model.codeOfLaw.手続法.刑事訴訟法
 
-import kt.koyakei.personRegister.domain.model.PersonInLaw
+import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 import java.time.ZonedDateTime
 
 

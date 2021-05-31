@@ -1,6 +1,6 @@
 package kt.koyakei.driveingRecordingSystem.domain.model
 
-import kt.koyakei.personRegister.domain.model.PersonInLaw
+import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 data class Driver(
     val identifier: Identifier,

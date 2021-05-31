@@ -1,7 +1,7 @@
 package kt.koyakei.lawAndOrder.domain.model.codeOfLaw.constitution.principalRight.minimumSocialSecurity
 
 import kt.koyakei.lawAndOrder.domain.model.LawAndOrder
-import kt.koyakei.personRegister.domain.model.Person
+import kt.koyakei.personInLawRegister.domain.model.Person
 import kt.koyakei.propertyTreeCategoryRegister.domain.model.unitOfThing.InternetSpeed
 
 /**

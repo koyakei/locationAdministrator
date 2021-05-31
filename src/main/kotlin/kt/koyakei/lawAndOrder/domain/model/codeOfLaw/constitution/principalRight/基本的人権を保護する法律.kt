@@ -2,7 +2,7 @@ package kt.koyakei.lawAndOrder.domain.model.codeOfLaw.constitution.principalRigh
 
 import kt.koyakei.lawAndOrder.domain.model.LawAndOrder
 import kt.koyakei.lawAndOrder.domain.model.codeOfLaw.constitution.principalRight.minimumSocialSecurity.最低限の文化的生活の保証条文
-import kt.koyakei.personRegister.domain.model.Person
+import kt.koyakei.personInLawRegister.domain.model.Person
 
 class 基本的人権を保護する法律( private val person: Person) {
 

@@ -2,7 +2,7 @@ package kt.koyakei.lawAndOrder.domain.model.codeOfLaw.constitution.principalRigh
 
 import kt.koyakei.lawAndOrder.domain.model.LawAndOrder
 import kt.koyakei.lawAndOrder.domain.model.codeOfLaw.constitution.principalRight.基本的人権の尊重の具体的基準を決める法律
-import kt.koyakei.personRegister.domain.model.Person
+import kt.koyakei.personInLawRegister.domain.model.Person
 
 class 最低限の文化的生活の保証条文(val person: Person) : 基本的人権の尊重の具体的基準を決める法律, LawAndOrder {
 
