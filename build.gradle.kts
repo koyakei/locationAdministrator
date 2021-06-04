@@ -38,6 +38,7 @@ dependencies {
     runtimeOnly("org.postgresql:postgresql")
 //    implementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
     implementation("org.springframework.boot:spring-boot-devtools")
+    implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks.withType<KotlinCompile> {
@@ -49,4 +50,12 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+val compileKotlin: KotlinCompile by tasks
+compileKotlin.kotlinOptions {
+    jvmTarget = "1.8"
+}
+val compileTestKotlin: KotlinCompile by tasks
+compileTestKotlin.kotlinOptions {
+    jvmTarget = "1.8"
 }
