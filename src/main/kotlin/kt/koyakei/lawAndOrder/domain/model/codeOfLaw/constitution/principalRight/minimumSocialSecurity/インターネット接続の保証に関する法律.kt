@@ -11,11 +11,13 @@ class インターネット接続の保証に関する法律(override val person
 
     val MinimumSpeedOfInternetConnection = InternetSpeed(10)
 
+
     /**
      * 最低接続速度は 10M bps である
      */
     override fun hasMinimumRight() =
-        if (person.rightStatus.internetSpeed.bitPerSecond.toInt() >
+        if (person.rightStatus
+            .internetSpeed.bitPerSecond.toInt() >
             MinimumSpeedOfInternetConnection.bitPerSecond.toInt()
         ) {
             LawAndOrder.Legal(true)

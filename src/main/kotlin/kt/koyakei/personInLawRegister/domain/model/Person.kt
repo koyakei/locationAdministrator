@@ -1,6 +1,7 @@
 package kt.koyakei.personInLawRegister.domain.model
 
 import kt.koyakei.戸籍Service.model.domain.Family
+import kt.koyakei.戸籍Service.model.domain.person.RightStatus
 import java.awt.Image
 
 /**
@@ -25,15 +26,10 @@ import java.awt.Image
  */
 data class Person(
     override val identifier: PersonInLaw.Identifier,
-    val profilePhoto: ProfilePhoto,
-    override val registeredAt: PersonInLaw.RegisteredAt
-
+    override val registeredAt: PersonInLaw.RegisteredAt,
+    val rightStatus: RightStatus
 ) : PersonInLaw {
 
-
-
-    @JvmInline
-    value class ProfilePhoto(val photo: Image)
 
 
 }

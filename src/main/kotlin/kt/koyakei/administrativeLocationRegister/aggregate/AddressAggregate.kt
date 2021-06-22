@@ -1,5 +1,5 @@
 package kt.koyakei.administrativeLocationRegister.aggregate
 
-import kt.koyakei.administrativeLocationRegister.domain.model.areas.location.administrativeLocation.AddressValueObject
+import kt.koyakei.administrativeLocationRegister.domain.model.areas.location.administrativeLocation.Prefecture
 
-data class AddressAggregate(val prefecture: AddressValueObject.Prefecture)
+data class AddressAggregate(val prefecture: Prefecture)

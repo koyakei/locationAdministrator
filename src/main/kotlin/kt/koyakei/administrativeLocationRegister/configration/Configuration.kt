@@ -1,6 +1,5 @@
 package kt.koyakei.administrativeLocationRegister.configration
 
-import kt.koyakei.locationadministrator.aggregate.AdministrativeLocationAggregate
 import org.axonframework.config.DefaultConfigurer
 import org.axonframework.eventhandling.EventBus
 import org.axonframework.eventhandling.SimpleEventBus
@@ -9,7 +8,6 @@ import org.axonframework.eventsourcing.eventstore.EmbeddedEventStore
 import org.axonframework.eventsourcing.eventstore.EventStorageEngine
 import org.axonframework.eventsourcing.eventstore.EventStore
 import org.axonframework.eventsourcing.eventstore.inmemory.InMemoryEventStorageEngine
-import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
@@ -32,11 +30,6 @@ class Configuration : DefaultConfigurer() {
             .builder()
             .storageEngine(InMemoryEventStorageEngine())
             .build()
-    }
-
-    @Bean
-    fun locationPriceEventSourcingRepository(@Qualifier("eventStore") eventStore: EventStore): EventSourcingRepository<AdministrativeLocationAggregate?>? {
-        return EventSourcingRepository.builder(AdministrativeLocationAggregate::class.java).eventStore(eventStore).build()
     }
 
     @Bean

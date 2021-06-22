@@ -5,7 +5,4 @@ data class AddressValueObject(
     val city: City,
     val streetNumber: StreetNumber,
     val aza: 字
-) {
-
-
-}
+)

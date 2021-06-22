@@ -10,5 +10,5 @@ import kt.koyakei.geometricMap.domain.model.GeometricRange
  * これ郵便番号のclassに置かなくてもいいのかな？　返り値の型に置いとけばいいか？　でもそしたら self が使えんぞ
  */
 sealed class Prefecture(val geometricRange: GeometricRange){
-    object 神奈川県: Prefecture(GeometricRange(listOf()))
+    object 神奈川県: Prefecture(GeometricRange(listOf(),GeometricRange.Identifier(1)))
 }

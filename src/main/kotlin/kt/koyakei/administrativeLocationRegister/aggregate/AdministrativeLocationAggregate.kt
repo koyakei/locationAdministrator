@@ -10,6 +10,7 @@ import kt.koyakei.administrativeLocationRegister.event.store.LocationPriceUpdate
 import org.axonframework.commandhandling.CommandHandler
 import org.axonframework.eventhandling.AllowReplay
 import org.axonframework.eventsourcing.EventSourcingHandler
+import org.axonframework.modelling.command.AggregateIdentifier
 import org.axonframework.modelling.command.AggregateLifecycle
 import org.axonframework.spring.stereotype.Aggregate
 
@@ -17,8 +18,7 @@ import org.axonframework.spring.stereotype.Aggregate
 @AllowReplay
 class AdministrativeLocationAggregate () {
 
-
-
+    @AggregateIdentifier
     private lateinit var id: String
     private lateinit var price: Number
     private lateinit var administrativeLocation: AdministrativeLocation
