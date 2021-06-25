@@ -16,6 +16,9 @@ interface PersonalIdentifierProvider<E : Any> {
     /**
      * 証明書
      * 自分は誰だと思うか？
+     * デコードされたパスワードをここで渡したくない。
+     * openIDで認証している仕組みってなんなのか？
+     * UserIdからメールアドレスを引いてそれでOPENIDにそのアドレスが登録しているか見る
      */
     fun handle(
         personalIdentificationEvidence: PersonalIdentificationEvidence<E>,
