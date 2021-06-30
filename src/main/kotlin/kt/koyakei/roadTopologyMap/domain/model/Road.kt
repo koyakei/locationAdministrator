@@ -1,11 +1,11 @@
 package kt.koyakei.roadTopologyMap.domain.model
 
-data class Road(
-    val identifier: Identifier,
-    val name: Name,
-    val startedFrom: StartedFrom,
-    val endTo: EndTo,
-){
+interface Road{
+    val identifier: Identifier
+    val name: Name
+    val startedFrom: StartedFrom
+    val endTo: EndTo
+
     @JvmInline
     value class Identifier(val long: Long)
     @JvmInline
