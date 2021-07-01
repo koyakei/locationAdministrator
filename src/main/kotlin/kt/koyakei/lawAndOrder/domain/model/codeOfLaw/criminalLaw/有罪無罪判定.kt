@@ -5,9 +5,9 @@ package kt.koyakei.lawAndOrder.domain.model.codeOfLaw.criminalLaw
  * 判定基準はいろいろだから注入するんじゃやないの？
  */
 class 有罪無罪判定(
-    private val 構成要件該当性判定: 構成要件該当性判定,
-    private val 違法性阻却判定: 違法性阻却判定,
-    private val 有責判定: 有責判定
+    private val 構成要件該当性判定: 構成要件該当性判定<out 刑事的事実>,
+    private val 違法性阻却判定: 違法性阻却判定<out 刑事的事実>,
+    private val 有責判定: 有責判定<out 刑事的事実>
 ) {
     val 構成要件に該当する = 構成要件該当性(true)
     val 違法性の阻却事由がない = 違法性阻却の有無(false)
@@ -21,8 +21,8 @@ class 有罪無罪判定(
     fun handle(
         v刑事的事実: 刑事的事実
     ) = IsGuilty(
-        構成要件該当性判定.handle(v刑事的事実.v内容) == 構成要件に該当する
-                && 違法性阻却判定.handle(v刑事的事実.v内容) == 違法性の阻却事由がない
+        構成要件該当性判定.handle() == 構成要件に該当する
+                && 違法性阻却判定.handle() == 違法性の阻却事由がない
                 && 有責判定.handle() == 刑事的責任あり
     )
 
