@@ -11,7 +11,5 @@ class 最低限の文化的生活の保証条文(val person: Person) : 基本的
     )
 
     override fun 基本的人権が尊重されている(): LawAndOrder.Legal =
-        LawAndOrder.Legal(最低限の文化的生活を保証する法律List.all { it.hasMinimumRight() == LawAndOrder.Legal(true) }
-            .equals(true))
-
+        LawAndOrder.Legal(最低限の文化的生活を保証する法律List.all { it.hasMinimumRight() == LawAndOrder.Legal(true) })
 }
