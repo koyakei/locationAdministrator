@@ -7,6 +7,14 @@ import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
  * 契約の発生主体が法人ではない可能性がある。
  */
 interface 契約 {
-    val 契約者List: List<PersonInLaw>
+    @JvmInline
+    value class Identifier(val long: Long)
 
+    val identifier: Identifier
+    val 契約者List: List<契約当事者>
+
+    @JvmInline
+    value class 契約履行済み(val boolean: Boolean)
+
+    fun 契約履行判定(): 契約履行済み
 }
