@@ -19,11 +19,11 @@ class LocationCommandController(
     ) :String{
         val id = "1"
 //            UUID.randomUUID().toString()
-        commandBus.dispatch(GenericCommandMessage(
+        return commandBus.dispatch(GenericCommandMessage(
             LocationCreateCommand(id,price)
-        ))
+        )).toMono().thenReturn(String).toString()
 
-        return id
+
     }
 
     @GetMapping("/update/{id}/{price}")
