@@ -17,7 +17,7 @@ class 事務管理契約(
     val 事務管理をしてもらった人: PersonInLaw,
     val 事務管理に伴って発生した債務: 債務,
     val v事務管理対象: 事務管理対象,
-    override val 契約者List: List<契約当事者>// これ　事務管理だと最初に管理しておく人と管理の利益を受ける人に分かれる。
+    override val 契約者当事者List: List<契約当事者>// これ　事務管理だと最初に管理しておく人と管理の利益を受ける人に分かれる。
     , override val identifier: 契約.Identifier
 ) : 契約 {
     /**

@@ -1,5 +1,8 @@
 package kt.koyakei.lawAndOrder.domain.model.codeOfLaw.civilLaw.debt
 
+/**
+ * TODO:給与債権が金銭支払い義務でのみにデフォルトで限定されることを表現してみよう
+ */
 class 金銭支払義務(
     override val identifier: 債務.Identifier,
     private val amountOfMoney: Int,

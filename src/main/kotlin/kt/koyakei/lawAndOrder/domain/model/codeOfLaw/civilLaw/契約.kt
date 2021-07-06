@@ -11,7 +11,7 @@ interface 契約 {
     value class Identifier(val long: Long)
 
     val identifier: Identifier
-    val 契約者List: List<契約当事者>
+    val 契約者当事者List: List<契約当事者>
 
     @JvmInline
     value class 契約履行済み(val boolean: Boolean)
