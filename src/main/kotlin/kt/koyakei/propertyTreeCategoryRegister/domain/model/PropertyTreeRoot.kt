@@ -5,6 +5,10 @@ package kt.koyakei.propertyTreeCategoryRegister.domain.model
  * カテゴリーのツリーだけはこれにしておく。　末端ノードを具体的な製品情報として扱っても矛盾しないだろう。
  *
  */
-data class PropertyTreeRoot(override val propertyTreeRootIdentifier: PropertyTreeVertexIdentifier)
-    :PropertyTreeVertex
+class PropertyTreeRoot()
+    :PropertyTreeVertex{
+    override val name: String = "大本"
+
+    override val identifier: PropertyTreeVertex.Identifier = PropertyTreeVertex.Identifier(1)
+    }
 

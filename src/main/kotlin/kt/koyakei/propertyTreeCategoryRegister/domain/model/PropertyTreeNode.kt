@@ -6,7 +6,8 @@ package kt.koyakei.propertyTreeCategoryRegister.domain.model
  *
  */
 data class PropertyTreeNode(
-    override val propertyTreeRootIdentifier: PropertyTreeVertexIdentifier,
-    val parentTreeNodeIdentifier: PropertyTreeVertexIdentifier,
+    override val identifier: PropertyTreeVertex.Identifier,
+    override val name: String,
+    val parentIdentifier: PropertyTreeRoot
 ): PropertyTreeVertex
 
