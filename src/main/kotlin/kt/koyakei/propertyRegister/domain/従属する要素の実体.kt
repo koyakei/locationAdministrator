@@ -1,13 +1,12 @@
 package kt.koyakei.propertyRegister.domain
 
-import kt.koyakei.propertyTreeCategoryRegister.domain.model.PropertyTreeNode
-
 /**
  * 一つの船に何本ねじがついてるか　みたいな value object だから　identifier はいらない
  */
 class 従属する要素の実体(
-                val amount: Amount,
-val PropertyItemIdentifier: PropertyItem.Identifier) {
+    val amount: Amount,
+    val propertyItemIdentifier: GeneralItemFeature.Identifier
+) {
     /**
      * 個数
      */
