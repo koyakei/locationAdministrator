@@ -1,23 +1,23 @@
 package kt.koyakei.locationadministrator
 
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
-import kt.koyakei.propertyRegister.domain.GeneralItemFeature
-import kt.koyakei.propertyRegister.domain.Maker
-import kt.koyakei.propertyRegister.domain.GeneralPropertyItem
-import kt.koyakei.propertyRegister.domain.従属する要素の実体
-import kt.koyakei.propertyTreeCategoryRegister.domain.model.PropertyTreeNode
-import kt.koyakei.propertyTreeCategoryRegister.domain.model.PropertyTreeRoot
-import kt.koyakei.propertyTreeCategoryRegister.domain.model.PropertyTreeVertex
+import kt.koyakei.baseRegistory.itemIdentifierRegister.domain.model.GeneralItemFeature
+import kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model.Maker
+import kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model.GeneralPropertyItem
+import kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model.従属する要素の実体
+import kt.koyakei.baseRegistory.itemTreeCategoryRegister.domain.model.ItemTreeNode
+import kt.koyakei.baseRegistory.itemTreeCategoryRegister.domain.model.ItemTreeRoot
+import kt.koyakei.baseRegistory.itemTreeCategoryRegister.domain.model.ItemTreeVertex
 
 /**
  * Iphone を定義するテスト
  */
 class IPhone {
     fun main() {
-        val スマホtouchPanelの分類 = PropertyTreeNode(
-            PropertyTreeVertex.Identifier(2),
+        val スマホtouchPanelの分類 = ItemTreeNode(
+            ItemTreeVertex.Identifier(2),
             "タッチパネル",
-            PropertyTreeRoot(),
+            ItemTreeRoot(),
         )
         val スマホのタッチパネル = GeneralPropertyItem(
             GeneralItemFeature.Identifier(2),
@@ -32,10 +32,10 @@ class IPhone {
             スマホのタッチパネル.identifier
         )
 
-        val スマホ分類された要素v = PropertyTreeNode(
-            PropertyTreeVertex.Identifier(4),
+        val スマホ分類された要素v = ItemTreeNode(
+            ItemTreeVertex.Identifier(4),
             "スマホ",
-            PropertyTreeRoot(),
+            ItemTreeRoot(),
         )
 // このモデルの電池の電圧はいくつなんだろう　電池の電圧で比較したい場合は？
         //電池クラスを作るしかないの？電池クラスを作ってみるか

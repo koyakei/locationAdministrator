@@ -1,8 +1,6 @@
 package kt.koyakei.personInLawRegister.domain.model
 
-import kt.koyakei.戸籍Service.model.domain.Family
-import kt.koyakei.戸籍Service.model.domain.person.RightStatus
-import java.awt.Image
+import kt.koyakei.legacyService.戸籍Service.model.domain.person.RightStatus
 
 /**
  * 名前を言って確認するとか、オフラインでの認証とのブリッジのためのクラスにする
