@@ -1,6 +1,6 @@
 package kt.koyakei.roadTopologyMap.domain.model
 
-import kt.koyakei.geometricMap.domain.model.GeometricPoint
+import kt.koyakei.baseRegistory.geometricMap.domain.model.GeometricPoint
 
 /**
  * 道路元標

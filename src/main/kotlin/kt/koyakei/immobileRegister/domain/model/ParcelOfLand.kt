@@ -1,7 +1,7 @@
 package kt.koyakei.immobileRegister.domain.model
 
 import kt.koyakei.administrativeLocationRegister.domain.model.areas.Area
-import kt.koyakei.geometricMap.domain.model.GeometricRange
+import kt.koyakei.baseRegistory.geometricMap.domain.model.GeometricRange
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 /**

@@ -1,6 +1,6 @@
 package kt.koyakei.administrativeLocationRegister.domain.model.areas.location.administrativeLocation
 
-import kt.koyakei.geometricMap.domain.model.GeometricRange
+import kt.koyakei.baseRegistory.geometricMap.domain.model.GeometricRange
 
 
 /**
