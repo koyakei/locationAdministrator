@@ -1,7 +1,7 @@
 package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.criminalLaw.carAccident
 
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
-import kt.koyakei.baseRegistory.roadTopologyMap.domain.model.Road
+import kt.koyakei.naturalBaseRegistry.roadTopologyMap.domain.model.Road
 
 data class 交通事故の報告(
     val identifier: Identifier,

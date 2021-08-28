@@ -1,11 +1,11 @@
 package kt.koyakei.applicationalService.domain.concreat.propertyItem
 
-import kt.koyakei.baseRegistory.itemIdentifierRegister.domain.model.GeneralItemFeature
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.GeneralItemFeature
 import kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model.GeneralPropertyItemFeature
 import kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model.Maker
 import kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model.従属する要素の実体
-import kt.koyakei.baseRegistory.itemTreeCategoryRegister.domain.model.unitOfThing.Ampere
-import kt.koyakei.baseRegistory.itemTreeCategoryRegister.domain.model.unitOfThing.KiloWattPerHour
+import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.unitOfThing.Ampere
+import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.unitOfThing.KiloWattPerHour
 
 /**
  * 分類用ノードツリーのどこ以下に存在するのか？　を  out ジェネリクスで制限することが適当なのか？

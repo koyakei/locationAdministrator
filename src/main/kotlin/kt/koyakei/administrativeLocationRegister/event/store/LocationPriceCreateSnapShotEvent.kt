@@ -1,5 +1,0 @@
-package kt.koyakei.administrativeLocationRegister.event.store
-
-import kt.koyakei.locationadministrator.aggregate.AdministrativeLocationAggregate
-
-data class LocationPriceCreateSnapShotEvent(val id: String, val administrativeLocationAggregate: AdministrativeLocationAggregate)

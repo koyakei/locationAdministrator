@@ -1,6 +1,6 @@
-package kt.koyakei.baseRegistory.roadTopologyMap.domain.model.road.kindOfLane
+package kt.koyakei.naturalBaseRegistry.roadTopologyMap.domain.model.road.kindOfLane
 
-import kt.koyakei.baseRegistory.roadTopologyMap.domain.model.road.Lane
+import kt.koyakei.naturalBaseRegistry.roadTopologyMap.domain.model.road.Lane
 
 class 車線: Lane {
 }

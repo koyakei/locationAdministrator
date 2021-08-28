@@ -1,0 +1,5 @@
+package kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.aggregate
+
+import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.location.administrativeLocation.Prefecture
+
+data class AddressAggregate(val prefecture: Prefecture)

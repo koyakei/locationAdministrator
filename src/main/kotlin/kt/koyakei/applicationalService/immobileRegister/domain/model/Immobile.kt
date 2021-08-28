@@ -1,7 +1,6 @@
 package kt.koyakei.applicationalService.immobileRegister.domain.model
 
-import kt.koyakei.administrativeLocationRegister.domain.model.areas.Area
-import kt.koyakei.baseRegistory.geometricMap.domain.model.GeometricRange
+import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.Area
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 /**
@@ -11,7 +10,7 @@ import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 data class Immobile(
     val identifier: Identifier,
     val areaIdentifierList: List<Area.AreaIdentifier>,
-    val geometricRange: GeometricRange,
+    val geometricRange: kt.koyakei.naturalBaseRegistry.geometricMap.domain.model.GeometricRange,
     val ownerIdentifier: PersonInLaw.Identifier
 ){
 

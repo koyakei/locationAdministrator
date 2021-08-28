@@ -1,6 +1,6 @@
 package kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model.service
 
-import kt.koyakei.baseRegistory.itemIdentifierRegister.domain.model.GeneralItemFeature
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.GeneralItemFeature
 import kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model.GeneralServiceItemFeature
 import kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model.従属する要素の実体
 

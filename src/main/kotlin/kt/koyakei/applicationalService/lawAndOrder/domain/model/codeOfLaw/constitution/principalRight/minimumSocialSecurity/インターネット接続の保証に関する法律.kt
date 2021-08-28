@@ -2,7 +2,7 @@ package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.const
 
 import kt.koyakei.applicationalService.lawAndOrder.domain.model.LawAndOrder
 import kt.koyakei.personInLawRegister.domain.model.Person
-import kt.koyakei.baseRegistory.itemTreeCategoryRegister.domain.model.unitOfThing.InternetSpeed
+import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.unitOfThing.InternetSpeed
 
 /**
  * 法律は有効期限とか権利の条件を作るべきで、権利そのものは他のクラスに任せるべきなのか？

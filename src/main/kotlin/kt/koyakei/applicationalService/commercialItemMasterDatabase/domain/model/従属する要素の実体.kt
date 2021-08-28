@@ -1,6 +1,6 @@
 package kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model
 
-import kt.koyakei.baseRegistory.itemIdentifierRegister.domain.model.GeneralItemFeature
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.GeneralItemFeature
 
 /**
  * 一つの船に何本ねじがついてるか　みたいな value object だから　identifier はいらない

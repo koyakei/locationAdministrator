@@ -1,12 +1,12 @@
 package kt.koyakei.locationadministrator
 
 import kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model.ServiceProvider
-import kt.koyakei.baseRegistory.itemIdentifierRegister.domain.model.GeneralItemFeature
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.GeneralItemFeature
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 import kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model.service.SkiInstructionService
-import kt.koyakei.baseRegistory.itemTreeCategoryRegister.domain.model.ItemTreeNode
-import kt.koyakei.baseRegistory.itemTreeCategoryRegister.domain.model.ItemTreeRoot
-import kt.koyakei.baseRegistory.itemTreeCategoryRegister.domain.model.ItemTreeVertex
+import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeNode
+import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeRoot
+import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeVertex
 
 class スキーを教えるサービス {
     fun main(){
