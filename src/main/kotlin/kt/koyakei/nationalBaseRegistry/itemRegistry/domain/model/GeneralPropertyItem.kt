@@ -1,12 +1,12 @@
-package kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model
+package kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model
 
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.GeneralItemFeature
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
 
 /**
  * 複数のつりーを格納
  */
 class GeneralPropertyItem(
-    override val identifier: GeneralItemFeature.Identifier,
+    override val identifier: Item.Identifier,
     override val 従属する要素の実体List: List<従属する要素の実体>,
     override val 分類された要素v: GeneralItemFeature.分類された要素,
     override val name: String,

@@ -1,4 +1,4 @@
-package kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model
+package kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model
 
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 

@@ -1,6 +1,5 @@
-package kt.koyakei.applicationalService.commercialItemMasterDatabase.domain.model
+package kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model
 
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.GeneralItemFeature
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 /**
