@@ -1,18 +1,20 @@
 package kt.koyakei.applicationalService.domain.concreat.propertyItem
 
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
 import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.GeneralItemFeature
 import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.GeneralPropertyItemFeature
 import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.Maker
 import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.従属する要素の実体
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.unitOfThing.Ampere
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.unitOfThing.KiloWattPerHour
+import org.hibernate.cache.spi.support.AbstractReadWriteAccess
 
 /**
  * 分類用ノードツリーのどこ以下に存在するのか？　を  out ジェネリクスで制限することが適当なのか？
  * コード的に表現することが正しいのであろうか？　分類を動的に動かせるにも変わらずこのような制限をコードでかけることが正しいのか？
  */
 class Battery(
-    val identifier: GeneralItemFeature.Identifier,
+    val identifier: Item.Identifier,
     val 従属する要素の実体List: List<従属する要素の実体>,
     val 分類された要素v: GeneralItemFeature.分類された要素,
     val name: String,
