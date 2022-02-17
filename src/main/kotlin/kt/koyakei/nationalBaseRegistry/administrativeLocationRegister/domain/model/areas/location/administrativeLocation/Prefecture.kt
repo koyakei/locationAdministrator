@@ -10,8 +10,7 @@ package kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.mo
 sealed class Prefecture(val geometricRange: kt.koyakei.naturalBaseRegistry.geometricMap.domain.model.GeometricRange){
     object 神奈川県: Prefecture(
         kt.koyakei.naturalBaseRegistry.geometricMap.domain.model.GeometricRange(
-            listOf(),
-            kt.koyakei.naturalBaseRegistry.geometricMap.domain.model.GeometricRange.Identifier(1)
+            listOf()
         )
     )
 }

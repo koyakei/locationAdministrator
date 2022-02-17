@@ -1,6 +1,6 @@
 package kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.event.store
 
-import kt.koyakei.locationadministrator.event.LocationUpdateCommand
+import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.command.LocationUpdateCommand
 import org.axonframework.eventhandling.*
 import org.axonframework.eventsourcing.EventSourcingHandler
 import org.axonframework.eventsourcing.eventstore.EventStorageEngine

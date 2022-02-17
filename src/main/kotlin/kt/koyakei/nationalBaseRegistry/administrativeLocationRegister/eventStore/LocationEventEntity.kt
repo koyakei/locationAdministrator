@@ -1,6 +1,6 @@
 package kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.eventStore
 
-import kt.koyakei.locationadministrator.event.LocationCreateEvent
+import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.event.location.LocationCreateEvent
 import org.axonframework.commandhandling.CommandHandler
 import org.axonframework.modelling.command.AggregateLifecycle
 import javax.persistence.Entity

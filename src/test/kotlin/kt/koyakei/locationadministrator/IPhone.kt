@@ -1,5 +1,6 @@
 package kt.koyakei.locationadministrator
 
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.GeneralItemFeature
 import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.Maker
@@ -20,7 +21,7 @@ class IPhone {
             ItemTreeRoot(),
         )
         val スマホのタッチパネル = GeneralPropertyItem(
-            GeneralItemFeature.Identifier(2),
+            Item.Identifier(2),
             listOf(),
             GeneralItemFeature.分類された要素(スマホtouchPanelの分類.identifier),
             "スマホのタッチパネル",
@@ -41,7 +42,7 @@ class IPhone {
         //電池クラスを作るしかないの？電池クラスを作ってみるか
 
         val IPhone = GeneralPropertyItem(
-            GeneralItemFeature.Identifier(2),
+            Item.Identifier(2),
             listOf(
                 ひとつの製品に含まれるスマホのタッチパネル部品の状態
             ),

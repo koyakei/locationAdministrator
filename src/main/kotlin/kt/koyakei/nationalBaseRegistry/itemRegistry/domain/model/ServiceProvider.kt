@@ -1,5 +1,6 @@
 package kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model
 
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 /**
@@ -9,7 +10,7 @@ import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
  * 能力はどうするべきなのか？
  * 提供者の
  */
-class ServiceProvider(override val identifier: GeneralItemFeature.Identifier,
+class ServiceProvider(override val identifier: Item.Identifier,
                       override val 従属する要素の実体List: List<従属する要素の実体>, // どんな能力を追っているかなど。
                       override val 分類された要素v: GeneralItemFeature.分類された要素,
                       override val name: String,

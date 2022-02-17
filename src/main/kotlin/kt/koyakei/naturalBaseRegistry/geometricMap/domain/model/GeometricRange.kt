@@ -6,8 +6,8 @@ package kt.koyakei.naturalBaseRegistry.geometricMap.domain.model
  * ギザギザになるけど、そこはどうするんだ？
  * フーリエ変換とかまさか使い分けじゃないよね。
  */
-data class GeometricRange(val geometricPointList: List<kt.koyakei.naturalBaseRegistry.geometricMap.domain.model.GeometricPoint>,
-                          val identifier: kt.koyakei.naturalBaseRegistry.geometricMap.domain.model.GeometricRange.Identifier
+data class GeometricRange(
+    val geometricPointList: List<GeometricPoint>
 ){
     @JvmInline
     value class Identifier(val long: Long)

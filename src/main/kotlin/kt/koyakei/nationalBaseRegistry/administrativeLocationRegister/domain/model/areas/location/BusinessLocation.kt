@@ -1,6 +1,7 @@
 package kt.koyakei.core.domain.model.areas.location
 
-import kt.koyakei.locationadministrator.domain.model.areas.location.administrativeLocation.AddressValueObject
+import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.location.administrativeLocation.AddressValueObject
+
 
 /**
  * 実体の予行方向の広さがある区域　縦方向の広さしか無い二次元の領域は想定しない。算出時に問題を起こしそうだから

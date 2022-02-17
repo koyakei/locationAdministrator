@@ -1,5 +1,6 @@
 package kt.koyakei.locationadministrator
 
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
 import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.ServiceProvider
 import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.GeneralItemFeature
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
@@ -16,7 +17,7 @@ class スキーを教えるサービス {
             ItemTreeRoot(),
         )
         val スキーを教えるProvider = ServiceProvider(
-            GeneralItemFeature.Identifier(1),
+            Item.Identifier(1),
             listOf(),
             GeneralItemFeature.分類された要素(
                 ItemTreeVertex.Identifier(1)
@@ -26,7 +27,7 @@ class スキーを教えるサービス {
             //　量産型のスキースクールに所属するインストラクター　みたいな当て方をするか
         )
         val スキーを教えるサービス = SkiInstructionService(
-            GeneralItemFeature.Identifier(2),
+            Item.Identifier(2),
             listOf(
             ),
             GeneralItemFeature.分類された要素(スキーを教えるサービスの分類.identifier),
