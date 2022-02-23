@@ -1,6 +1,7 @@
 package kt.koyakei.applicationalService.personIdentifierService.domain.service
 
 import kt.koyakei.applicationalService.personIdentifierService.domain.model.PersonalIdentificationEvidence
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 /**
@@ -22,7 +23,7 @@ interface PersonalIdentifierProvider<E : Any> {
      */
     fun handle(
         personalIdentificationEvidence: PersonalIdentificationEvidence<E>,
-        personInLawIdentifier: PersonInLaw.Identifier
+        itemIdentifier: Item.Identifier
     ) : 本人です
 
     @JvmInline

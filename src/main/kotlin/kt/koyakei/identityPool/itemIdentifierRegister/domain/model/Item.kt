@@ -1,5 +1,6 @@
 package kt.koyakei.identityPool.itemIdentifierRegister.domain.model
 
+import kt.koyakei.identityPool.CreatedAt
 import java.time.LocalDateTime
 
 interface Item {
@@ -9,6 +10,4 @@ interface Item {
 
     val createdAt: CreatedAt
 
-    @JvmInline
-    value class CreatedAt(val localDateTime: LocalDateTime)
 }

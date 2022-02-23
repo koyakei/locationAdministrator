@@ -20,18 +20,13 @@ class 有罪無罪判定(
      * でなおかつ違法性阻却がない場合
      * でなおかつ有責な場合は有罪である。
      */
-    val handle = IsGuilty(
+    val handle = IsGuilty( boolean =
         v刑事責任年齢判定.handle() == 刑事的責任あり &&
                 構成要件該当性判定.handle() == 構成要件に該当する
                 && 違法性阻却判定.handle() == 違法性の阻却事由がない
                 && 有責判定.handle() == 刑事的責任あり
     )
 
-    /**
-     * true 有罪
-     */
-    @JvmInline
-    value class IsGuilty(val boolean: Boolean)
 
     @JvmInline
     value class 構成要件該当性(val boolean: Boolean)

@@ -1,5 +1,6 @@
 package kt.koyakei.personInLawRegister.domain.model
 
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
 import kt.koyakei.legacyService.戸籍Service.model.domain.person.RightStatus
 
 /**
@@ -25,7 +26,9 @@ import kt.koyakei.legacyService.戸籍Service.model.domain.person.RightStatus
 data class Person(
     override val identifier: PersonInLaw.Identifier,
     override val registeredAt: PersonInLaw.RegisteredAt,
-    val rightStatus: RightStatus
+    val rightStatus: RightStatus,
+    override val itemIdentifier: Item.Identifier,
+    val age: Number
 ) : PersonInLaw {
 
 

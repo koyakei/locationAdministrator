@@ -4,6 +4,7 @@ import kt.koyakei.applicationalService.personIdentifierService.domain.model.Pers
 import kt.koyakei.applicationalService.personIdentifierService.domain.model.personalPhoto.PersonalPhoto
 import kt.koyakei.applicationalService.personIdentifierService.domain.model.repository.PersonalPhotoRepository
 import kt.koyakei.applicationalService.personIdentifierService.domain.service.PersonalIdentifierProvider
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 class PersonalPhotoIdentifierProvider(
@@ -13,12 +14,12 @@ class PersonalPhotoIdentifierProvider(
 
     override fun handle(
         personalIdentificationEvidence: PersonalIdentificationEvidence<PersonalPhoto.Photo>,
-        personInLawIdentifier: PersonInLaw.Identifier
+        itemIdentifier: Item.Identifier
     ): PersonalIdentifierProvider.本人です =
         PersonalIdentifierProvider.本人です(
             PersonalIdentifierProvider.一致してます(true)== profilePhotoMatchingService.handle(
                 personalPhotoRepository.findByUserIdentifier(
-                    personInLawIdentifier
+                    itemIdentifier
                 ), personalIdentificationEvidence.evidence
             )
         )
