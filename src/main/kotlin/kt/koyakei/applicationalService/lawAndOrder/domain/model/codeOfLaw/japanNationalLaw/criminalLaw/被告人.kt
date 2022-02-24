@@ -1,4 +1,4 @@
-package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.criminalLaw
+package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japanNationalLaw.criminalLaw
 
 data class 被告人(val identifier: Identifier, val age: Age){
     @JvmInline

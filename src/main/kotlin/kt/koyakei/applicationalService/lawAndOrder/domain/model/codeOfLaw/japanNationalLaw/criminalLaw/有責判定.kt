@@ -1,4 +1,4 @@
-package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.criminalLaw
+package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japanNationalLaw.criminalLaw
 
 /**
  * 刑事年齢はすべての罪で責任の要素として判定するはずだがここに入れるのはおかしいのか？

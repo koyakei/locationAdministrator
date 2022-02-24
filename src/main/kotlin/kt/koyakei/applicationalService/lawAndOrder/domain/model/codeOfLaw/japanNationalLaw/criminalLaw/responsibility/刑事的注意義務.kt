@@ -1,4 +1,4 @@
-package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.criminalLaw.responsibility
+package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japanNationalLaw.criminalLaw.responsibility
 
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 

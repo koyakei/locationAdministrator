@@ -1,7 +1,7 @@
 package kt.koyakei.identityPool.itemIdentifierRegister.domain.model
 
 import kt.koyakei.identityPool.CreatedAt
-import java.time.LocalDateTime
+import kt.koyakei.identityPool.VailedAt
 
 interface Item {
     val identifier: Identifier
@@ -9,5 +9,7 @@ interface Item {
     value class Identifier(val Long: Long)
 
     val createdAt: CreatedAt
+
+    val vailedAt: VailedAt
 
 }

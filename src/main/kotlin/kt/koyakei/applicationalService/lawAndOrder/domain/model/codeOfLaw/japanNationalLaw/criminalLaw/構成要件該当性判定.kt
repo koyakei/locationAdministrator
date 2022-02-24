@@ -1,4 +1,4 @@
-package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.criminalLaw
+package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japanNationalLaw.criminalLaw
 
 /**
  * 構成要件に該当するかは何罪に当たるのかを人間で当たりをつけてから判定すると良いと思う

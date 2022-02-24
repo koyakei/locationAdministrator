@@ -1,4 +1,4 @@
-package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.criminalLaw
+package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japanNationalLaw.criminalLaw
 
 class 刑事責任年齢判定(
     val 刑事責任年齢: 被告人.Age,

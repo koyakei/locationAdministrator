@@ -1,4 +1,4 @@
-package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.criminalLaw.drinkAlcohol
+package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japanNationalLaw.criminalLaw.drinkAlcohol
 
 import kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.criminalLaw.刑罰
 import kt.koyakei.identityPool.CreatedAt
