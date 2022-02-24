@@ -1,7 +1,11 @@
 package kt.koyakei.core.domain.model.areas.location
 
-interface Location {
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
+import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.Area
 
+interface Location : Area {
+    override val identifier: Identifier
+    interface Identifier: Area.Identifier
     val enterLocationCondition: EnterLocationCondition
 
     /**

@@ -4,8 +4,8 @@ import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.mod
 import java.net.URL
 
 class MobileApplicationPage(
-    override val areaIdentifier: Area.AreaIdentifier,
-    override val id: Area.AreaIdentifier,
+    val identifier: Area.Identifier,
+    override val identifier: Area.Identifier,
     override val name: Area.AreaName,
 ) : Page {
 

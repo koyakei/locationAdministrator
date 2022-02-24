@@ -2,25 +2,19 @@ package kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.mo
 
 class JapanPostalCode(private val body: String// 7digit
 ) {
-    private val postalCodeList: HashMap<JapanPostalCode, PostalCodeAddressObject>
-        get() {
-            return hashMapOf<JapanPostalCode, PostalCodeAddressObject>(
-                JapanPostalCode("2400113") to
-                        PostalCodeAddressObject(
-                            prefecture = Prefecture.神奈川県,
-                            city = City.三浦郡葉山町,
-                            aza = 字.長柄
-                        )
-            )
-        }
 
     /**
-     * TODO:なんで AddressValueObject? になっちゃうの？
+     *
      * AddressValueObject にしたい
+     * 郵便番号を振り直して nullable にならないようにする。
      */
-//        fun getAddressFromPostalCode(): AddressValueObject? {
-//            return postalCodeList.get(this.body)
-//        }
+        fun getAddressFromPostalCode(): PostalCodeAddressObject {
+            return PostalCodeAddressObject(
+                prefecture = Prefecture.神奈川県,
+                city = City.三浦郡葉山町,
+                aza = 字.長柄
+            )
+        }
     // ハイフン付き七桁
     fun getCodeWithHyphen(): String {
         return body

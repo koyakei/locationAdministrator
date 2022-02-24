@@ -5,8 +5,9 @@ import kt.koyakei.identityPool.VailedAt
 
 interface Item {
     val identifier: Identifier
-    @JvmInline
-    value class Identifier(val Long: Long)
+    interface Identifier {
+        val long: Long
+    }
 
     val createdAt: CreatedAt
 

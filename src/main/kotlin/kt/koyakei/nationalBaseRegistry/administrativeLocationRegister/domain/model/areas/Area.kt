@@ -1,24 +1,19 @@
 package kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas
 
+import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
 import java.net.URL
 
-/**
- * TODO: いちいち　Area<AreaIdentifier>みたいに書くのが重複している　解決できないのか？
- *
- */
-interface Area<out T: Area.AreaIdentifier> {
+interface Area: Item {
+    override val identifier: Identifier
     /**
      * URI は  area://area identifier
      * みたいにする
      * area identifier から生成したい。
      * 生成ロジックもここに書く
      */
-    val id: AreaIdentifier
-    val areaIdentifier: T
     val name: AreaName
     fun areaURIGenerator(name: String):URL
-    @JvmInline
-    value class AreaIdentifier(val uri: String)
+    interface Identifier:Item.Identifier
 
     @JvmInline
     value class AreaName(val id: String)

@@ -38,7 +38,7 @@ class AdministrativeLocationAggregate () {
 //                    locationCreateCommand.areaId,
 //                    locationCreateCommand.administrativeLocationName,
 //                    locationCreateCommand.enterLocationCondition,
-//                    locationCreateCommand.areaIdentifier,
+//                    locationCreateCommand.identifier,
 //                    locationCreateCommand.addressValueObject
 //                )
             )

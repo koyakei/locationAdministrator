@@ -1,7 +1,8 @@
 package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japanNationalLaw.criminalLaw.carAccident
 
-import kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.criminalLaw.刑事的事実
-import kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.criminalLaw.被告人
+import kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japanNationalLaw.criminalLaw.刑事的事実
+import kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japanNationalLaw.criminalLaw.被告人
+
 
 /**
  * 交通事故は意図的に起こすことができ、殺人の手段としても使われるが、原因において自由な行為は意図的でないとして扱うことにする。
