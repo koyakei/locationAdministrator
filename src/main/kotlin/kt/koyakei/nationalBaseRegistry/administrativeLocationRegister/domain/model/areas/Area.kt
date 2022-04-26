@@ -3,8 +3,8 @@ package kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.mo
 import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
 import java.net.URL
 
-interface Area: Item {
-    override val identifier: Identifier
+interface Area<T :Area.Identifier>: Item<T> {
+    override val identifier: T
     /**
      * URI は  area://area identifier
      * みたいにする

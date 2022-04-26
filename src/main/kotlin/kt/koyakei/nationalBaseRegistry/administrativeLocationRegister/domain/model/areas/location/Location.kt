@@ -3,8 +3,8 @@ package kt.koyakei.core.domain.model.areas.location
 import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
 import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.Area
 
-interface Location : Area {
-    override val identifier: Identifier
+interface Location<T: Location.Identifier> : Area<T> {
+    override val identifier: T
     interface Identifier: Area.Identifier
     val enterLocationCondition: EnterLocationCondition
 

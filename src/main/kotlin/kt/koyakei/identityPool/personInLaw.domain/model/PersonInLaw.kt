@@ -11,11 +11,9 @@ import java.time.ZonedDateTime
  * マイクロサービスにする前提で法人IDを
  */
 interface PersonInLaw{
-    val identifier: Identifier
+    val identifier: Item.Identifier
     val itemIdentifier: Item.Identifier
     val registeredAt: RegisteredAt
-    @JvmInline
-    value class Identifier(val id : Long)
 
     @JvmInline
     value class RegisteredAt(val zonedDateTime: ZonedDateTime)
