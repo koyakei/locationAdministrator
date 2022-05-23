@@ -1,6 +1,6 @@
 package kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model
 
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
+import kt.koyakei.naturalBaseRegistry.Item
 
 /**
  * 複数のつりーを格納

@@ -1,7 +1,7 @@
 package kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model
 
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeVertex
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
+import kt.koyakei.naturalBaseRegistry.Item
 
 interface GeneralItemFeature {
     val identifier: Item.Identifier

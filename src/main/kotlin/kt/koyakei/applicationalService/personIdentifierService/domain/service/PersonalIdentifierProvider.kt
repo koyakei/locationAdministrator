@@ -1,8 +1,7 @@
 package kt.koyakei.applicationalService.personIdentifierService.domain.service
 
 import kt.koyakei.applicationalService.personIdentifierService.domain.model.PersonalIdentificationEvidence
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.naturalBaseRegistry.Item
 
 /**
  * 人物特定情報を引き出すサービス

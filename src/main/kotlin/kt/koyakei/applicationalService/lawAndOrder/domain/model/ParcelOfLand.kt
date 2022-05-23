@@ -1,7 +1,6 @@
 package kt.koyakei.applicationalService.lawAndOrder.domain.model
 
-import kt.koyakei.core.domain.model.areas.location.Location
-import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.Area
+import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.location.Location
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 /**

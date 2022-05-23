@@ -1,6 +1,6 @@
 package kt.koyakei.core.domain.model.areas.page
 
-import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.Area
+import kt.koyakei.naturalBaseRegistry.area.Area
 import java.net.URL
 
 class MobileApplicationPage(

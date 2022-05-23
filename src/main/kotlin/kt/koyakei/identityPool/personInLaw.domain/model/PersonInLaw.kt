@@ -1,7 +1,6 @@
 package kt.koyakei.personInLawRegister.domain.model
 
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
-import java.awt.Image
+import kt.koyakei.naturalBaseRegistry.Item
 import java.time.ZonedDateTime
 
 /**

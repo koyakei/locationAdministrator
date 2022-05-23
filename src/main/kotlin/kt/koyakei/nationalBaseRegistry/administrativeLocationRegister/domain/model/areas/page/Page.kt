@@ -1,8 +1,8 @@
 package kt.koyakei.core.domain.model.areas.page
 
 
-import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.Area
+import kt.koyakei.naturalBaseRegistry.area.Area
 
 
-interface Page : Area{
+interface Page : Area {
 }

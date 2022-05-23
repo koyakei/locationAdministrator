@@ -2,7 +2,7 @@ package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japan
 
 import kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.criminalLaw.刑罰
 import kt.koyakei.identityPool.CreatedAt
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
+import kt.koyakei.naturalBaseRegistry.Item
 
 class 未成年飲酒に対する罰(
     override val identifier: Item.Identifier

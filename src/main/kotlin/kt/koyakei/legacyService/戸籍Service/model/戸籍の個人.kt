@@ -1,6 +1,6 @@
 package kt.koyakei.legacyService.戸籍Service.model
 
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
+import kt.koyakei.naturalBaseRegistry.Item
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 import kt.koyakei.legacyService.戸籍Service.model.domain.Family
 import kt.koyakei.legacyService.戸籍Service.model.domain.person.RightStatus
@@ -14,13 +14,13 @@ import java.time.ZonedDateTime
  */
 
 data class 戸籍の個人(val identifier: Identifier,
-                 val itemIdentifier: Item.Identifier,
-                 val marriagePartnerIdentifier: MarriagePartnerIdentifier,
-                 val parentsInLaw: ParentsInLaw,
-                 val inheritanceProhibitedParents: InheritanceProhibitedRelatives,
-                 val rightStatus: RightStatus,
-                 val personName: PersonName,
-                 val familyIdentifier: Family.FamilyIdentifier,
+                     val itemIdentifier: Item.Identifier,
+                     val marriagePartnerIdentifier: MarriagePartnerIdentifier,
+                     val parentsInLaw: ParentsInLaw,
+                     val inheritanceProhibitedParents: InheritanceProhibitedRelatives,
+                     val rightStatus: RightStatus,
+                     val personName: PersonName,
+                     val familyIdentifier: Family.FamilyIdentifier,
 ){
     @JvmInline
     value class BirthDateTimeAt(val zonedDateTime: ZonedDateTime)

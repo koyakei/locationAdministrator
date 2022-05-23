@@ -1,5 +1,7 @@
 package kt.koyakei.core.domain.model.areas.location
 
+import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.location.Location
+import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.location.LocationEnterable
 import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.location.administrativeLocation.AddressValueObject
 
 
@@ -11,7 +13,7 @@ open class BusinessLocation(
     val name: String,
     open val parentId: Long,
     val id: Long,
-    override val enterLocationCondition: Location.EnterLocationCondition
+    override val enterLocationCondition: LocationEnterable.EnterLocationCondition
 ) : Location {
 
     // parentIdを入れたら、自動的にparentLocationがロードされるようにしたい。

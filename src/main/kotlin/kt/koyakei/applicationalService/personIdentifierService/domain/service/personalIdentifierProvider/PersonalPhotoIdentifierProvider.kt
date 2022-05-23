@@ -4,8 +4,7 @@ import kt.koyakei.applicationalService.personIdentifierService.domain.model.Pers
 import kt.koyakei.applicationalService.personIdentifierService.domain.model.personalPhoto.PersonalPhoto
 import kt.koyakei.applicationalService.personIdentifierService.domain.model.repository.PersonalPhotoRepository
 import kt.koyakei.applicationalService.personIdentifierService.domain.service.PersonalIdentifierProvider
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.naturalBaseRegistry.Item
 
 class PersonalPhotoIdentifierProvider(
     private val personalPhotoRepository: PersonalPhotoRepository,

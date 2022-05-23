@@ -1,6 +1,6 @@
 package kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.service
 
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
+import kt.koyakei.naturalBaseRegistry.Item
 import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.GeneralItemFeature
 import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.GeneralServiceItemFeature
 import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.従属する要素の実体

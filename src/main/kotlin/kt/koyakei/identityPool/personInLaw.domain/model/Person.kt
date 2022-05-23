@@ -1,6 +1,6 @@
 package kt.koyakei.personInLawRegister.domain.model
 
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
+import kt.koyakei.naturalBaseRegistry.Item
 import kt.koyakei.legacyService.戸籍Service.model.domain.person.RightStatus
 
 /**

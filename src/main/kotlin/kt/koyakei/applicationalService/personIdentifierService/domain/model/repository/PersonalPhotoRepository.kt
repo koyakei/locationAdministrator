@@ -1,7 +1,7 @@
 package kt.koyakei.applicationalService.personIdentifierService.domain.model.repository
 
 import kt.koyakei.applicationalService.personIdentifierService.domain.model.personalPhoto.PersonalPhoto
-import kt.koyakei.identityPool.itemIdentifierRegister.domain.model.Item
+import kt.koyakei.naturalBaseRegistry.Item
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
 
 interface PersonalPhotoRepository {
