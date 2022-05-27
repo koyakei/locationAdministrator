@@ -4,4 +4,5 @@ import kt.koyakei.privateCompany.postalCodeRegister.model.JapanPostalCode
 
 interface JapanPostalCodeRepository {
     fun save(savePostalCodeCommand: SavePostalCodeCommand): JapanPostalCode
+    fun update(japanPostalCodeAllocateToLocationCommand: JapanPostalCodeAllocateToLocationCommand)
 }

@@ -1,9 +1,12 @@
 package kt.koyakei.privateCompany.postalCodeRegister.event
 
+import kt.koyakei.identityPool.VailedAt
 import kt.koyakei.nationalBaseRegistry.locationRegister.domain.model.Location
-import kt.koyakei.privateCompany.postalCodeRegister.model.JapanPostalCode
+import kt.koyakei.naturalBaseRegistry.Item
 
 data class PostalCodeCreateEvent(
-    val postalCode: JapanPostalCode,
-    val addressIdentifier: Location.Identifier
+    val vailedAt: VailedAt,
+    val parentItemIdentifier: Item.Identifier,
+    val name: Item.ItemName,
+    val locationIdentifier: Location.Identifier
 )
