@@ -14,7 +14,6 @@ object RootItem: ItemWithoutTime{
             get() = 1
     }
 
-
     object AbsoluteNothingIdentifier: Item.Identifier {
         override val long: Long
             get() = 0

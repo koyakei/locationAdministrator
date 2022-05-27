@@ -9,13 +9,9 @@ import java.time.ZonedDateTime
  * 死亡とかは疾走してからの復活もあるわけで、それぞれのサービスで管理しようぜ
  * マイクロサービスにする前提で法人IDを
  */
-interface PersonInLaw{
-    val identifier: Item.Identifier
-    val itemIdentifier: Item.Identifier
-    val registeredAt: RegisteredAt
-
-    @JvmInline
-    value class RegisteredAt(val zonedDateTime: ZonedDateTime)
+interface PersonInLaw: Item{
+    override val identifier: Identifier
+    interface Identifier: Item.Identifier
 }
 
 

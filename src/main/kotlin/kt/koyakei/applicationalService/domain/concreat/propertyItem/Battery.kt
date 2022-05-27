@@ -1,10 +1,10 @@
 package kt.koyakei.applicationalService.domain.concreat.propertyItem
 
 import kt.koyakei.naturalBaseRegistry.Item
-import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.GeneralItemFeature
-import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.GeneralPropertyItemFeature
-import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.Maker
-import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.従属する要素の実体
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.GeneralItemFeature
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.GeneralPropertyItemFeature
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.Maker
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.従属する要素の実体
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.unitOfThing.Ampere
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.unitOfThing.KiloWattPerHour
 

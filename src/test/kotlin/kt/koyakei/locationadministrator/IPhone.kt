@@ -2,10 +2,10 @@ package kt.koyakei.locationadministrator
 
 import kt.koyakei.naturalBaseRegistry.Item
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
-import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.GeneralItemFeature
-import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.Maker
-import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.GeneralPropertyItem
-import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.従属する要素の実体
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.GeneralItemFeature
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.Maker
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.GeneralPropertyItem
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.従属する要素の実体
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeNode
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeRoot
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeVertex

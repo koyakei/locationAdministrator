@@ -1,10 +1,10 @@
 package kt.koyakei.locationadministrator
 
 import kt.koyakei.naturalBaseRegistry.Item
-import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.ServiceProvider
-import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.GeneralItemFeature
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.ServiceProvider
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.GeneralItemFeature
 import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
-import kt.koyakei.nationalBaseRegistry.itemRegistry.domain.model.service.SkiInstructionService
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.service.SkiInstructionService
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeNode
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeRoot
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeVertex
