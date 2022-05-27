@@ -1,15 +1,26 @@
 package kt.koyakei.privateCompany.postalCodeRegister.model
 
+import kt.koyakei.identityPool.CreatedAt
+import kt.koyakei.identityPool.VailedAt
 import kt.koyakei.legacyService.地方自治法LocationRegister.domain.model.areas.location.administrativeLocation.City
 import kt.koyakei.legacyService.地方自治法LocationRegister.domain.model.areas.location.administrativeLocation.Prefecture
 import kt.koyakei.legacyService.地方自治法LocationRegister.domain.model.areas.location.administrativeLocation.町字
+import kt.koyakei.naturalBaseRegistry.Item
 
 /**
  * 日本郵政株式会社が管理する
  */
-class JapanPostalCode(private val body: String// 7digit
-) {
-
+class JapanPostalCode(
+    private val body: String// 7digit
+                      ,
+                      override val createdAt: CreatedAt,
+                      override val vailedAt: VailedAt,
+                      override val identifier: Identifier,
+                      override val parentItemIdentifier: Item.Identifier,
+                      override val name: Item.ItemName
+) : Item{
+    @JvmInline
+    value class Identifier(override val long: Long): Item.Identifier
     /**
      *
      * AddressValueObject にしたい
