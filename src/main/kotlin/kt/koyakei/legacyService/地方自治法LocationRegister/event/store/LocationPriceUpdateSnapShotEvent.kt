@@ -1,5 +1,5 @@
 package kt.koyakei.legacyService.地方自治法LocationRegister.event.store
 
-import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.aggregate.AdministrativeLocationAggregate
+import kt.koyakei.legacyService.地方自治法LocationRegister.aggregate.AdministrativeLocationAggregate
 
 data class LocationPriceUpdateSnapShotEvent(val id : String, val administrativeLocationAggregate: AdministrativeLocationAggregate)

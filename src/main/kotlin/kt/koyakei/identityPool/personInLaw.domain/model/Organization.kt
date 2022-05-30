@@ -1,5 +1,7 @@
 package kt.koyakei.personInLawRegister.domain.model
 
+import kt.koyakei.identityPool.CreatedAt
+import kt.koyakei.identityPool.VailedAt
 import kt.koyakei.naturalBaseRegistry.Item
 
 
@@ -9,8 +11,10 @@ import kt.koyakei.naturalBaseRegistry.Item
 data class Organization(
     override val identifier: PersonInLaw.Identifier,
     val organizationName: OrganizationName,
-    override val registeredAt: PersonInLaw.RegisteredAt,
-    override val itemIdentifier: Item.Identifier
+    override val createdAt: CreatedAt,
+    override val vailedAt: VailedAt,
+    override val parentItemIdentifier: Item.Identifier,
+    override val name: Item.ItemName
 ) : PersonInLaw{
     @JvmInline
     value class OrganizationName(val name: String)

@@ -9,10 +9,12 @@ import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.従属�
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeNode
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeRoot
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeVertex
+import org.springframework.boot.test.context.SpringBootTest
 
 /**
  * Iphone を定義するテスト
  */
+@SpringBootTest
 class IPhone {
     fun main() {
         val スマホtouchPanelの分類 = ItemTreeNode(
@@ -21,7 +23,7 @@ class IPhone {
             ItemTreeRoot(),
         )
         val スマホのタッチパネル = GeneralPropertyItem(
-            Item.Identifier(2),
+            GeneralPropertyItem.GeneralIdentifier(2),
             listOf(),
             GeneralItemFeature.分類された要素(スマホtouchPanelの分類.identifier),
             "スマホのタッチパネル",
@@ -42,7 +44,7 @@ class IPhone {
         //電池クラスを作るしかないの？電池クラスを作ってみるか
 
         val IPhone = GeneralPropertyItem(
-            Item.Identifier(2),
+            GeneralPropertyItem.GeneralIdentifier(2),
             listOf(
                 ひとつの製品に含まれるスマホのタッチパネル部品の状態
             ),

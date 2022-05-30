@@ -7,8 +7,5 @@ import kt.koyakei.naturalBaseRegistry.Item
 import java.time.LocalDateTime
 
 class IsGuilty(
-    override val identifier: Item.Identifier = Item.Identifier(2),
-    override val createdAt: CreatedAt = CreatedAt(LocalDateTime.MIN),
-    override val vailedAt: VailedAt = VailedAt(LocalDateTime.MIN),
-    val boolean: Boolean
+    val boolean: Boolean,
 ) : PredictedLegalResult

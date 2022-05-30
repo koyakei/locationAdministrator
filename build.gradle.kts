@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("org.springframework.boot") version "2.4.4"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
-    kotlin("jvm") version "1.5.0-RC"
+    kotlin("jvm") version "1.6.21"
     kotlin("plugin.spring") version "1.4.31"
     kotlin("plugin.jpa") version "1.4.31"
 }
@@ -35,17 +35,14 @@ dependencies {
     implementation("com.h2database:h2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
+    testImplementation(kotlin("test"))
     runtimeOnly("org.postgresql:postgresql")
 //    implementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
     implementation("org.springframework.boot:spring-boot-devtools")
-    implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions {
-        freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "15"
-    }
+    kotlinOptions.jvmTarget = "1.8"
 }
 
 tasks.withType<Test> {

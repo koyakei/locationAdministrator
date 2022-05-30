@@ -11,7 +11,7 @@ import java.time.ZonedDateTime
  */
 interface PersonInLaw: Item{
     override val identifier: Identifier
-    interface Identifier: Item.Identifier
+    data class Identifier(override val long: Long) : Item.Identifier
 }
 
 

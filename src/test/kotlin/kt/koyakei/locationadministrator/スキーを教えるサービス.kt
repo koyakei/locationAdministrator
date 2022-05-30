@@ -8,6 +8,7 @@ import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.service
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeNode
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeRoot
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeVertex
+import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.GeneralPropertyItem
 
 class スキーを教えるサービス {
     fun main(){
@@ -17,7 +18,7 @@ class スキーを教えるサービス {
             ItemTreeRoot(),
         )
         val スキーを教えるProvider = ServiceProvider(
-            Item.Identifier(1),
+            GeneralPropertyItem.GeneralIdentifier(1),
             listOf(),
             GeneralItemFeature.分類された要素(
                 ItemTreeVertex.Identifier(1)
@@ -27,7 +28,7 @@ class スキーを教えるサービス {
             //　量産型のスキースクールに所属するインストラクター　みたいな当て方をするか
         )
         val スキーを教えるサービス = SkiInstructionService(
-            Item.Identifier(2),
+            GeneralPropertyItem.GeneralIdentifier(2),
             listOf(
             ),
             GeneralItemFeature.分類された要素(スキーを教えるサービスの分類.identifier),

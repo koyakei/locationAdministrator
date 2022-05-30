@@ -1,6 +1,6 @@
 package kt.koyakei.legacyService.地方自治法LocationRegister.event.store
 
-import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.command.LocationUpdateCommand
+import kt.koyakei.legacyService.地方自治法LocationRegister.command.LocationUpdateCommand
 import org.axonframework.eventhandling.*
 import org.axonframework.eventsourcing.EventSourcingHandler
 import org.axonframework.eventsourcing.eventstore.EventStorageEngine
@@ -16,10 +16,10 @@ class LocationPriceSnapShotComponent(
 
     @EventSourcingHandler
     fun on(evt: LocationPriceCreateSnapShotEvent) {
-        eventStorageEngine.appendEvents(GenericDomainEventMessage(
-            "AdministrativeLocationAggregate", evt.id,
-            1, evt.administrativeLocationAggregate
-        ))
+//        eventStorageEngine.appendEvents(GenericDomainEventMessage(
+//            "AdministrativeLocationAggregate", evt.id,
+//            1, evt.administrativeLocationAggregate
+//        ))
         eventStorageEngine.storeSnapshot(
             GenericDomainEventMessage(
                 "AdministrativeLocationAggregate", "AdministrativeLocationAggregate",

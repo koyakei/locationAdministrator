@@ -1,7 +1,7 @@
 package kt.koyakei.core.domain.model.valueObject.positioning
 
 import kt.koyakei.core.domain.model.valueObject.positioning.topology.GeometricPointInfo
-import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.model.areas.location.administrativeLocation.AddressValueObject
+import kt.koyakei.legacyService.地方自治法LocationRegister.domain.model.areas.location.administrativeLocation.地方自治法AddressValueObject
 
 /**
  * 住所と緯度経度は両方持つ？　矛盾している場合があるのでは？
@@ -10,5 +10,5 @@ import kt.koyakei.nationalBaseRegistry.administrativeLocationRegister.domain.mod
  */
 data class GeometricInfo(
         val geometricPointInfo: GeometricPointInfo,
-        val addressValueObjectInfo: AddressValueObject
+        val addressValueObjectInfo: 地方自治法AddressValueObject
 )
