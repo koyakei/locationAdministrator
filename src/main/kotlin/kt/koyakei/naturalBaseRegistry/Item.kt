@@ -7,9 +7,9 @@ import kt.koyakei.identityPool.VailedAt
  * 全ての対象に付与される識別子は一意である。
  */
 interface Item :ItemWithoutTime{
+    override val identifier: Identifier
 
-    interface Identifier {
-        val long: Long
+    interface Identifier : ItemWithoutTime.Identifier {
     }
 
 
@@ -21,15 +21,6 @@ interface Item :ItemWithoutTime{
         val string: String
     }
 
-    class GeneralItemName(override val string: String):ItemName {
-
-    }
-}
-
-interface ItemWithoutTime{
-    val identifier: Item.Identifier
-    val parentItemIdentifier: Item.Identifier
-    val name: Item.ItemName
 }
 
 

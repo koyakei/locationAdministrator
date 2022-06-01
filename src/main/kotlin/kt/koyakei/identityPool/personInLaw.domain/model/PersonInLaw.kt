@@ -1,7 +1,6 @@
 package kt.koyakei.personInLawRegister.domain.model
 
 import kt.koyakei.naturalBaseRegistry.Item
-import java.time.ZonedDateTime
 
 /**
  * deleted At はここにつけるべきなの？
