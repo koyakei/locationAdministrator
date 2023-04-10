@@ -6,8 +6,8 @@ package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japan
  * 事実も犯罪ごとに用意するのか？
  * 構成要件に該当する判定
  */
-interface 構成要件該当性判定<out T: 刑事的事実>{
-    val 事実: T
+interface 構成要件該当性判定{
+    val 事実: 刑事的事実
 
     fun handle(): 有罪無罪判定.構成要件該当性
 

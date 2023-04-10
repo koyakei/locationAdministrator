@@ -11,6 +11,7 @@ class MobileApplicationPage(
     override val createdAt: CreatedAt,
     override val vailedAt: VailedAt,
     override val parentItemIdentifier: Item.Identifier, override val name: Item.ItemName,
+    override val itemName: Item.ItemName,
 ) : Page {
 
 

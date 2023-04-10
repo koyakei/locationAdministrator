@@ -17,8 +17,10 @@ interface Item :ItemWithoutTime{
     val createdAt: CreatedAt
 
     val vailedAt: VailedAt
+
+    val itemName: ItemName
     interface ItemName{
-        val string: String
+        val name: String
     }
 
 }
