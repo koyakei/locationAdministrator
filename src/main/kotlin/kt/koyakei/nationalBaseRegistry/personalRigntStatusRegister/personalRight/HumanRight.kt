@@ -1,6 +1,6 @@
 package kt.koyakei.personInLawRegister.domain.model.personalRight
 
-import kt.koyakei.personInLawRegister.domain.model.Person
+import kt.koyakei.identityPool.personInLaw.domain.model.Person
 
 /**
  * 基本的人権

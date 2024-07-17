@@ -2,7 +2,7 @@ package kt.koyakei.applicationalService.personIdentifierService.domain.model.rep
 
 import kt.koyakei.applicationalService.personIdentifierService.domain.model.personalPhoto.PersonalPhoto
 import kt.koyakei.naturalBaseRegistry.Item
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 
 interface PersonalPhotoRepository {
     fun findByUserIdentifier(itemIdentifier: Item.Identifier): PersonalPhoto.Photo

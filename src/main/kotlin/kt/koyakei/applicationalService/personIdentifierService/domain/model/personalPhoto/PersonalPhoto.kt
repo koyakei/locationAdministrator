@@ -1,7 +1,7 @@
 package kt.koyakei.applicationalService.personIdentifierService.domain.model.personalPhoto
 
 import kt.koyakei.applicationalService.personIdentifierService.domain.model.PersonalIdentificationEvidence
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 import java.awt.Image
 
 data class PersonalPhoto<E: PersonalPhoto.Photo>(

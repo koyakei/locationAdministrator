@@ -3,7 +3,7 @@ package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.civil
 import kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.civilLaw.debt.債務
 import kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.civilLaw.契約
 import kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.civilLaw.契約当事者
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 
 /**
  * 売買をして義務がはっせいするというより、　何か勝手にしてあげて、お返ししてやろうと思う気持ちを勝手に持ち始めること自体が債務論で提起されている債権債務の発生状況ににているから、

@@ -1,6 +1,6 @@
 package kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model
 
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 
 /**
  * 作った法人を定義するのか

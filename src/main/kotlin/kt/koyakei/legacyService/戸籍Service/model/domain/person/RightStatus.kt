@@ -1,6 +1,6 @@
 package kt.koyakei.legacyService.戸籍Service.model.domain.person
 
-import kt.koyakei.personInLawRegister.domain.model.Person
+import kt.koyakei.identityPool.personInLaw.domain.model.Person
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.unitOfThing.InternetSpeed
 
 /**

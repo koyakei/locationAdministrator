@@ -2,6 +2,7 @@ package kt.koyakei.personInLawRegister.domain.model
 
 import kt.koyakei.identityPool.CreatedAt
 import kt.koyakei.identityPool.VailedAt
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 import kt.koyakei.naturalBaseRegistry.Item
 
 
@@ -15,7 +16,7 @@ data class Organization(
     override val vailedAt: VailedAt,
     override val parentItemIdentifier: Item.Identifier,
     override val name: Item.ItemName
-) : PersonInLaw{
+) : PersonInLaw {
     @JvmInline
     value class OrganizationName(val name: String)
 }

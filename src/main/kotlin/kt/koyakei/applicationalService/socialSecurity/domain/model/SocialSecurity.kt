@@ -1,6 +1,6 @@
 package kt.koyakei.applicationalService.socialSecurity.domain.model
 
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 
 /**
  * 社会保障系　税金と一緒にしないのか？　現物給付がある。　監督官庁が違うっていうけど、賞罰一体として運用しないとだめなんじゃないか？

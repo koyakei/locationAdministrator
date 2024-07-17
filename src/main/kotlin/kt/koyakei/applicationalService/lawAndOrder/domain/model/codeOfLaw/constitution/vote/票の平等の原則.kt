@@ -1,6 +1,6 @@
 package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.constitution.vote
 
-import kt.koyakei.personInLawRegister.domain.model.Person
+import kt.koyakei.identityPool.personInLaw.domain.model.Person
 
 /**
  * 一人一票以上の投票もありますので

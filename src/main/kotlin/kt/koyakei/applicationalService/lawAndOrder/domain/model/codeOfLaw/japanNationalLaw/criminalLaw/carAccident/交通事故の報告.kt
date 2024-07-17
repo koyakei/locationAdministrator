@@ -1,6 +1,6 @@
 package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.japanNationalLaw.criminalLaw.carAccident
 
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 import kt.koyakei.naturalBaseRegistry.roadTopologyMap.domain.model.Road
 
 data class 交通事故の報告(

@@ -1,7 +1,7 @@
 package kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model
 
 import kt.koyakei.naturalBaseRegistry.Item
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 
 /**
  * 大量の同一能力の労働者であっても　専門的な変えが聞かない労働者であってもここに入れる

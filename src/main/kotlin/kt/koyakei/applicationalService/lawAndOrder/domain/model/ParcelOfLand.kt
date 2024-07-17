@@ -1,7 +1,7 @@
 package kt.koyakei.applicationalService.lawAndOrder.domain.model
 
 import kt.koyakei.nationalBaseRegistry.locationRegister.domain.model.Location
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 
 /**
  * 一筆単位

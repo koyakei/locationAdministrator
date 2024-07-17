@@ -1,6 +1,6 @@
 package kt.koyakei.legacyService.戸籍Service.model.domain
 
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 
 /**
  * 家族が何人いるかとか家族関係で行政からもらえるお金は変わってくる

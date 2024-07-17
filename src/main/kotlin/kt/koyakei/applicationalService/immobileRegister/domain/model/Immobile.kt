@@ -2,7 +2,7 @@ package kt.koyakei.applicationalService.immobileRegister.domain.model
 
 import kt.koyakei.nationalBaseRegistry.locationRegister.domain.model.Location
 import kt.koyakei.naturalBaseRegistry.Item
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 
 /**
  * 複数の住所を持つ土地がある。　玄関の位置を住所にするのが普通なのだが、適当な場合がある。

@@ -1,6 +1,6 @@
 package kt.koyakei.applicationalService.personIdentifierService.domain.model
 
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 
 data class 住基カード<E: 住基カード.パスワード>(
     override val personInLawIdentifier: PersonInLaw.Identifier,

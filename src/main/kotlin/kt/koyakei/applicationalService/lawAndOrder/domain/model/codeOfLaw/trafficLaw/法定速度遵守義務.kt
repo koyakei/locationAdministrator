@@ -1,6 +1,6 @@
 package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.trafficLaw
 
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 
 class 法定速度遵守義務(
     val 義務履行者: PersonInLaw,

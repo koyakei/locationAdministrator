@@ -1,7 +1,7 @@
 package kt.koyakei.legacyService.戸籍Service.model
 
 import kt.koyakei.naturalBaseRegistry.Item
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 import kt.koyakei.legacyService.戸籍Service.model.domain.Family
 import kt.koyakei.legacyService.戸籍Service.model.domain.person.RightStatus
 import java.time.ZonedDateTime

@@ -1,6 +1,6 @@
 package kt.koyakei.applicationalService.lawAndOrder.domain.model.codeOfLaw.constitution.informationDisclosure
 
-import kt.koyakei.personInLawRegister.domain.model.Person
+import kt.koyakei.identityPool.personInLaw.domain.model.Person
 
 /**
  * 公開してきた相手の情報の情報を情報の所有者が読めるアクセス権を与える

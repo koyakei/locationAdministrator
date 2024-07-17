@@ -1,4 +1,4 @@
-package kt.koyakei.personInLawRegister.domain.model
+package kt.koyakei.identityPool.personInLaw.domain.model
 
 import kt.koyakei.naturalBaseRegistry.Item
 

@@ -1,9 +1,10 @@
-package kt.koyakei.personInLawRegister.domain.model
+package kt.koyakei.identityPool.personInLaw.domain.model
 
 import kt.koyakei.identityPool.CreatedAt
 import kt.koyakei.identityPool.VailedAt
 import kt.koyakei.naturalBaseRegistry.Item
 import kt.koyakei.legacyService.戸籍Service.model.domain.person.RightStatus
+import java.time.LocalDate
 
 /**
  * 名前を言って確認するとか、オフラインでの認証とのブリッジのためのクラスにする
@@ -25,18 +26,15 @@ import kt.koyakei.legacyService.戸籍Service.model.domain.person.RightStatus
  * 横断検索専用サービスを立ち上げてそこのドキュメント型DBから検索結果を取得するようにしたほうがいいのでは？
  *
  */
-data class Person(
-    override val identifier: PersonInLaw.Identifier,
-    val rightStatus: RightStatus,
-    val age: Number,
-    override val createdAt: CreatedAt,
-    override val vailedAt: VailedAt,
-    override val parentItemIdentifier: Item.Identifier,
+interface Person : PersonInLaw {
+    override val identifier: PersonInLaw.Identifier
+    val rightStatus: RightStatus
+    override val createdAt: CreatedAt
+    override val vailedAt: VailedAt
+    override val parentItemIdentifier: Item.Identifier
     override val name: Item.ItemName
-) : PersonInLaw {
-
-
-
+    val age: Int
+        get() = LocalDate.now().year - createdAt.localDateTime.year
 }
 
 

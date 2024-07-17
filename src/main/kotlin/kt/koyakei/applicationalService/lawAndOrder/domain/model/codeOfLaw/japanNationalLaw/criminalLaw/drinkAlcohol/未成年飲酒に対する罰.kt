@@ -8,5 +8,5 @@ import kt.koyakei.naturalBaseRegistry.Item
 class 未成年飲酒に対する罰(
 ) : 刑罰 {
     override val 罰金額Range: IntRange
-         = 100..1000
+         = 0..850000
 }

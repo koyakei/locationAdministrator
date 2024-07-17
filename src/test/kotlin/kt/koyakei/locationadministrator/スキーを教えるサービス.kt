@@ -2,7 +2,7 @@ package kt.koyakei.locationadministrator
 
 import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.ServiceProvider
 import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.GeneralItemFeature
-import kt.koyakei.personInLawRegister.domain.model.PersonInLaw
+import kt.koyakei.identityPool.personInLaw.domain.model.PersonInLaw
 import kt.koyakei.nationalBaseRegistry.nationalItemRegistry.domain.model.service.SkiInstructionService
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeNode
 import kt.koyakei.internationalBaseRegistry.itemTreeCategoryRegister.domain.model.ItemTreeRoot
